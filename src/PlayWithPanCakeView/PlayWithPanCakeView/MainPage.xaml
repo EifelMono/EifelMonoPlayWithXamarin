@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="PlayWithPanCakeView.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:PlayWithPanCakeView"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <StackLayout>
+        <controls:PanCakeButton AnimationScale="0.95" CornerRadius="10">
+            <Label HorizontalOptions="Center" Text="Save" />
+        </controls:PanCakeButton>
+
+        <controls:PanCakeButton AnimationScale="0.95" CornerRadius="10">
+            <StackLayout
+                HorizontalOptions="Center"
+                Orientation="Horizontal"
+                Spacing="10">
+                <Image Source="apple.png" />
+                <Label HorizontalOptions="Center" Text="Sign in with Apple" />
+            </StackLayout>
+        </controls:PanCakeButton>
+
+        <controls:PanCakeButton
+            Margin="10"
+            Command="{Binding Add}"
+            CornerRadius="20"
+            HeightRequest="50"
+            HorizontalOptions="Center"
+            Sides="100"
+            WidthRequest="50">
+            <Label
+                HorizontalOptions="Center"
+                Text="Hej"
+                TextColor="White"
+                VerticalOptions="Center" />
+        </controls:PanCakeButton>
+    </StackLayout>
+</ContentPage>
