@@ -7,7 +7,8 @@
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-    <StackLayout>
+    <StackLayout Margin="20">
+        <StackLayout HeightRequest="50" />
         <controls:PanCakeButton AnimationScale="0.95" CornerRadius="10">
             <Label HorizontalOptions="Center" Text="Save" />
         </controls:PanCakeButton>
@@ -32,7 +33,7 @@
             WidthRequest="50">
             <Label
                 HorizontalOptions="Center"
-                Text="Hej"
+                Text="Heja"
                 TextColor="White"
                 VerticalOptions="Center" />
         </controls:PanCakeButton>
